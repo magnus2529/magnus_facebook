@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+    
+            
+
+
+
+<body>
+ 
+        <!-- Header Section -->
+  <header id="header">
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search Facebook">
+    </div>
+    <div class="user-actions">
+      <a href = "index.html" > <button>Home</button> </a>
+     <a href = "resources/sections/profile.html" > <button>  Profile </button> <a/>
+      <button onclick="toggleNotifications()"> Notifications <span id="notification-count">7 </span> </button>
+    </div>
+  </header>
+
+    <!-- Notification Dropdown -->
+    <div class="notification-dropdown" id="notification-dropdown">
+        <h3>Notifications</h3>
+        <ul id="notification-list">
+            <li class="notification unread">
+                <span>SCC liked your post</span>
+                <button class="mark-read" onclick="markAsRead(this)">Mark as read</button>
+            </li>
+            <li class="notification unread">
+                <span>Mary commented on your photo</span>
+                <button class="mark-read" onclick="markAsRead(this)">Mark as read</button>
+            </li>
+            <li class="notification">
+                <span>You have a new friend request from Ayush</span>
+                <button class="mark-read" onclick="markAsRead(this)">Mark as read</button>
+            </li>
+<li class="notification">
+                <span>You have a new friend request from Prateek</span>
+                <button class="mark-read" onclick="markAsRead(this)">Mark as read</button>
+            </li>
+<li class="notification">
+                <span>You have a new friend request from Rudra</span>
+                <button class="mark-read" onclick="markAsRead(this)">Mark as read</button>
+            </li>
+<li class="notification">
+                <span>You have a new friend request from Ananya</span>
+                <button class="mark-read" onclick="markAsRead(this)">Mark as read</button>
+            </li>
+<li class="notification">
+                <span>You have a new friend request from Surabhi</span>
+                <button class="mark-read" onclick="markAsRead(this)">Mark as read</button>
+            </li>
+        </ul>
+        <button id="clear-all" onclick="clearNotifications()">Clear All</button>
+    </div>
+
+
+  
+
+        <!-- Main Content -->
+        <main>
+            <div class="main-section">
+                <div class="left-section">
+                    <div class="profile-card">
+                        <img src="resources/media/pp.png" alt="Avatar">
+                        <p>MAGNUS BROTHERS</p>
+                        <a href = "resources/sections/profile.html"> <button> Your Profile </button> </a><br>
+                        <!-- <button>Friends</button> <br>
+                        <button>Groups</button> <br>
+<button>Memories</button> <br>
+<button>Watch</button> <br>
+<button>Marketplace</button> -->
+
+
+
+                    </div>
+                </div>
+
+                <div class="middle-section">
+<!-- Facebook Stories Section -->
+    <section class="stories-section">
+        <div class="stories-container">
+            <!-- User Story -->
+            <div class="story user-story">
+                <div class="story-img">
+                    <img src="resources/media/pp.png" alt="User">
+                </div>
+                <span class="plus-icon">+</span>
+
+            </div>
+
+            <!-- Other User Stories -->
+            <div class="story">
+                <div class="story-img">
+                    <img src="resources/media/siet.png" alt="User 1">
+                </div>
+                <div class="story-progress"></div>
+            </div>
+
+            <div class="story">
+                <div class="story-img">
+                    <img src="resources/media/post1.png" alt="User 2">
+                </div>
+                <div class="story-progress"></div>
+            </div>
+
+            <div class="story">
+                <div class="story-img">
+                    <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="User 3">
+                </div>
+                <div class="story-progress"></div>
+            </div>
+
+            <div class="story">
+                <div class="story-img">
+                    <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="User 4">
+                </div>
+                <div class="story-progress"></div>
+            </div>
+<div class="story">
+                <div class="story-img">
+                    <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="User 3">
+                </div>
+                <div class="story-progress"></div>
+            </div>
+<div class="story">
+                <div class="story-img">
+                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="User 3">
+                </div>
+                <div class="story-progress"></div>
+            </div>
+<div class="story">
+                <div class="story-img">
+                    <img src="resources/media/ppt1.png" alt="User 3">
+                </div>
+                <div class="story-progress"></div>
+            </div>
+<div class="story">
+                <div class="story-img">
+                    <img src="resources/media/cb.png" alt="User 3">
+                </div>
+                <div class="story-progress"></div>
+            </div>
+<div class="story">
+                <div class="story-img">
+                    <img src="resources/media/123.png" alt="User 3">
+                </div>
+                <div class="story-progress"></div>
+            </div><div class="story">
+                <div class="story-img">
+                    <img src="resources/media/ppt2.png" alt="User 3">
+                </div>
+                <div class="story-progress"></div>
+            </div>
+        </div>
+    </section>
+                    <div class="post-section">
+                        <textarea placeholder="What's on your mind, MAGNUS?"></textarea>
+                        <button class="post-button">Post</button>
+                    </div>
+                    <div class="posts">
+                        <div class="post">
+                            <p><strong>SCC</strong> updated its profile picture</p>
+                            <img src="resources\media\post1.png" alt="Post image">
+</br>
+                            <div class="post-actions">
+                                      <button>Like</button>
+          <button>Comment</button>
+          <button>Share</button>
+                            </div>
+                            </div>
+                            <br>
+                            <div class="post">
+                            <p><strong>SCC</strong> posted a video</p>
+
+<video width="820" height="440" autoplay muted>
+  <source src="resources\media\post2.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+    <br>
+                            <div class="post-actions">
+          <button>Like</button>
+          <button>Comment</button>
+          <button>Share</button>
+</div>
+                            </div>
+                        
+                            <br>
+                            <div class="post">
+                            <p><strong>Coding Hub</strong> posted a photo</p>
+                            <img src="resources/media/ppt3.png" alt="Post image">
+  <br>
+                            <div class="post-actions">
+                                      <button>Like</button>
+          <button>Comment</button>
+          <button>Share</button>
+</div>
+                            </div>
+                          
+                            <br>
+                            <div class="post">
+                            <p><strong>Peaceful Mind</strong> posted a photo</p>
+                            <img src="https://www.w3schools.com/w3images/fjords.jpg" alt="Post image">
+  <br>
+                            <div class="post-actions">
+          <button>Like</button>
+          <button>Comment</button>
+          <button>Share</button>
+</div>
+                            </div>
+                          
+                            <br>
+                            <div class="post">
+                            <p><strong> ( Advertisement ) </strong>YouTube INDIA : Make YouTube your career</p>
+                     <video  width="870" height="440" autoplay muted>
+  <source src="resources\media\mod.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+   <br>
+                            <div class="post-actions">
+          <button>Like</button>
+          <button>Comment</button>
+          <button>Share</button>
+</div>
+                            </div>
+                         
+                            <br>
+                            <div class="post">
+                            <p><strong>John Doe</strong> updated his profile picture</p>
+                            <img src="resources/media/ppt2.png" alt="Post image">
+     <br>
+                            <div class="post-actions">
+          <button>Like</button>
+          <button>Comment</button>
+          <button>Share</button>
+</div>
+                            </div>
+                       
+                            <br>
+                            <div class="post">
+                            <p><strong>SCC</strong> posted a photo</p>
+                            <img src="resources/media/hackverse.jpg" alt="Post image">
+  <br>
+                            <div class="post-actions">
+          <button>Like</button>
+          <button>Comment</button>
+          <button>Share</button>
+</div>
+                            </div>
+                          
+                            <br>
+                            <div class="post">
+                            <p><strong>John Doe</strong> reposted a photo</p>
+                            <img src="resources/media/ppt1.png" alt="Post image">
+   <br>
+                            <div class="post-actions">
+          <button>Like</button>
+          <button>Comment</button>
+          <button>Share</button>
+</div>
+                            </div>
+                         
+                            <br>
+                            <div class="post">
+                            <p><strong>Skills Hub</strong> posted a photo</p>
+                            <img src="resources/media/123.png" alt="Post image">
+  <br>
+                            <div class="post-actions">
+          <button>Like</button>
+          <button>Comment</button>
+          <button>Share</button>
+</div>
+                            </div>
+                            <br>
+                          
+                            <div class="post">
+                            <p><strong>Tech Skills</strong> posted a photo</p>
+                            <img src="resources/media/cb.png" alt="Post image">
+  <br>
+                            <div class="post-actions">
+          <button>Like</button>
+          <button>Comment</button>
+          <button>Share</button>
+</div>
+                            </div>
+                            <br>
+                          
+                            <div class="post">
+                            <p><strong>SCC</strong> shared your post</p>
+                           <video  width="870" height="440" autoplay muted>
+  <source src="resources\media\pink.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+                            <div class="post-actions">
+          <button>Like</button>
+          <button>Comment</button>
+          <button>Share</button>
+</div>
+                            </div>
+                      
+                            <br>
+                            <div class="post">
+                            <p><strong>Prince Mishra</strong> posted : -</p>
+                            <p> We should learn programming, because it helps in problem solving </p>
+                            <div class="post-actions">
+          <button>Like</button>
+          <button>Comment</button>
+          <button>Share</button>
+</div>
+                            </div>
+                         
+                            <br>
+                            <div class="post">
+                            <p><strong>SCC</strong> posted a photo</p>
+                            <img src="resources/media/scc1.jpg" alt="Post image">
+                            <div class="post-actions">
+          <button>Like</button>
+          <button>Comment</button>
+          <button>Share</button>
+</div>
+                            </div>
+                           
+                            <br>
+                            <div class="post">
+                            <p><strong>Daily Quotes</strong> posted : -</p>
+                            <p> Education is the most powerful weapon of the world, which can be used to change the world </p>
+                            <div class="post-actions">
+          <button>Like</button>
+          <button>Comment</button>
+          <button>Share</button>
+</div>
+                            </div>
+                          
+                            <br>
+                            <div class="post">
+                            <p><strong>CTC </strong> posted a photo</p>
+                            <img src="resources/media/cbb.png" alt="Post image">
+                            <div class="post-actions">
+          <button>Like</button>
+          <button>Comment</button>
+          <button>Share</button>
+</div>
+                            </div>
+                            
+                            <br>
+
+</div>
+
+                            
+       
+ <!-- Footer Section -->
+  <footer id="footer">
+    <p>© 2025 Facebook Clone by MAGNUS BROTHERS</p>
+  </footer>             
+            <script src="script.js"></script> 
+</body>              

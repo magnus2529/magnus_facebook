@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Stories Section Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Facebook Stories Section -->
+    <section class="stories-section">
+        <div class="stories-container">
+            <!-- User Story -->
+            <div class="story user-story">
+                <div class="story-img">
+                    <img src="https://www.w3schools.com/w3images/avatar2.png" alt="User">
+                </div>
+                <span class="plus-icon">+</span>
+                <p>Create Story</p>
+            </div>
+
+            <!-- Other User Stories -->
+            <div class="story">
+                <div class="story-img">
+                    <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="User 1">
+                </div>
+                <div class="story-progress"></div>
+            </div>
+
+            <div class="story">
+                <div class="story-img">
+                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="User 2">
+                </div>
+                <div class="story-progress"></div>
+            </div>
+
+            <div class="story">
+                <div class="story-img">
+                    <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="User 3">
+                </div>
+                <div class="story-progress"></div>
+            </div>
+
+            <div class="story">
+                <div class="story-img">
+                    <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="User 4">
+                </div>
+                <div class="story-progress"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
