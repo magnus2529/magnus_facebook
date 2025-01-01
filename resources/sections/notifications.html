@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Notification Section Clone</title>
+    <link rel="stylesheet" href="notifications_style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo">Facebook</div>
+            <div class="notification-icon">
+                <div class="bell" onclick="toggleNotifications()">
+                    <img src="https://img.icons8.com/ios/50/000000/appointment-reminders.png" alt="Notifications">
+                    <span id="notification-count">3</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Notification Dropdown -->
+    <div class="notification-dropdown" id="notification-dropdown">
+        <h3>Notifications</h3>
+        <ul id="notification-list">
+            <li class="notification unread">
+                <span>John liked your post</span>
+                <button class="mark-read" onclick="markAsRead(this)">Mark as read</button>
+            </li>
+            <li class="notification unread">
+                <span>Mary commented on your photo</span>
+                <button class="mark-read" onclick="markAsRead(this)">Mark as read</button>
+            </li>
+            <li class="notification">
+                <span>You have a new friend request from Alex</span>
+                <button class="mark-read" onclick="markAsRead(this)">Mark as read</button>
+            </li>
+        </ul>
+        <button id="clear-all" onclick="clearNotifications()">Clear All</button>
+    </div>
+
+    <script src="notifications_script.js"></script>
+</body>
+</html>

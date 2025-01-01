@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login - Clone</title>
+    <link rel="stylesheet" href="login_style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-content">
+            <!-- Facebook Logo -->
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
+            </div>
+
+            <!-- Login Form -->
+            <form id="loginForm">
+                <div class="input-group">
+                    <input type="text" id="email" placeholder="Email or Phone" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <div class="button-group">
+                    <button type="submit" id="loginButton">Log In</button>
+                </div>
+            </form>
+
+            <!-- Forgot Password and Signup -->
+            <div class="forgot-password">
+                <a href="#">Forgotten password?</a>
+            </div>
+            <div class="signup">
+                <p>Don't have an account? <a href="#">Sign Up</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="login_script.js"></script>
+</body>
+</html>

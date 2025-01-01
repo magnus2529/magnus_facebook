@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Profile Clone</title>
+  <link rel="stylesheet" href="profile_styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="navbar">
+      <div class="navbar-left">
+        <a href="../../index.html">Facebook</a>
+      </div>
+      <div class="navbar-right">
+        <button class="dropdown-btn" onclick="toggleDropdown()">▼</button>
+        <div class="dropdown-content" id="dropdownMenu">
+          
+          <a href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Profile Section -->
+  <section class="profile-section">
+    <div class="profile-header">
+      <img src="../media/pp.png" alt="Profile Picture" class="profile-pic">
+      <div class="profile-info">
+        <h1 id="user-name">MAGNUS BROTHERS</h1>
+        <p id="user-bio">Web Developers | Passionate about code and coffee!</p>
+        <button class="edit-profile-btn" onclick="toggleEditProfile()">Edit Profile</button>
+      </div>
+    </div>
+
+    <!-- Profile Management Section (Hidden by default) -->
+    <div class="profile-management" id="profileManagement" style="display: none;">
+      <h2>Edit Profile</h2>
+      <form id="editForm">
+        <label for="new-name">New Name:</label>
+        <input type="text" id="new-name" placeholder="Enter new name">
+        <label for="new-bio">New Bio:</label>
+        <textarea id="new-bio" placeholder="Enter new bio"></textarea>
+        <button type="button" onclick="saveProfileChanges()">Save</button>
+        <button type="button" onclick="cancelProfileChanges()">Cancel</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Posts Section -->
+  <section class="posts-section">
+    <h2>Posts</h2>
+    <div class="posts-grid">
+      <div class="post">
+        <img src="../media/pp.png" alt="Post 1">
+        <p>Just finished a new project!</p>
+      </div>
+      <div class="post">
+        <img src="../media/face.png" alt="Post 2">
+        <p>will power!</p>
+      </div>
+      <div class="post">
+        <img src="../media/ppp.png" alt="Post 3">
+        <p>Learning a new web framework today!</p>
+      </div>
+      <div class="post">
+        <img src="../media/jpeg.jpg" alt="Post 4">
+        <p>It's a beautiful day to code!</p>
+      </div>
+    </div>
+  </section>
+<br>
+<!-- Footer Section -->
+  <footer id="footer">
+    <p>© 2025 Facebook Clone by MAGNUS BROTHERS</p>
+  </footer> 
+  <script src="profile_script.js"></script>
+</body>
+</html>
